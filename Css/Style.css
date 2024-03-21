@@ -13,7 +13,9 @@ a {
   cursor: pointer;
   color: dodgerblue;
 }
-
+li {
+  text-decoration: none;
+}
 header {
   position: absolute;
   top: 0;
@@ -57,35 +59,259 @@ header nav li {
     font-size: 15px;
   }
 }
+
+/*SECCIONES*/
+section {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px;
+}
+@media (max-width: 1000px) {
+  section {
+    padding: 100px 50px;
+  }
+}
+@media (max-width: 600px) {
+  section {
+    padding: 130px 30px;
+  }
+  .banner h1 {
+    margin-top: 90%;
+    margin-bottom: 10px;
+    font-size: 60px;
+  }
+  .banner h2 {
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+  .banner a .banner-btn {
+    text-transform: uppercase;
+    background: cornflowerblue;
+    padding: 15px 30px;
+    border-radius: 50px;
+  }
+}
 /*Banner*/
 .banner {
   position: relative;
   text-align: center;
   justify-content: center;
-  /*color:white;*/
+  color:white;
   min-height: 80vh;
 }
 
 .banner .banner-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    background-image: url('../Img/f8e48eedaa7f6f39d3cf10d58f20fb72.jpg  ');
-    width: 100%;
-    height: 100%;
-    background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-image: url("../Img/f8e48eedaa7f6f39d3cf10d58f20fb72.jpg  ");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 .banner .banner-img::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    background-image: url('../Img/f8e48eedaa7f6f39d3cf10d58f20fb72.jpg  ');
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    opacity: .1;    
-    content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-image: url("/Img/el-capitulo-1054-del-manga-de-one-piece-confirma-que-shanks-conocia-la-verdadera-naturaleza-de-la-gomu-gomu-no-mi.webp");
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+  content: "";
+}
+
+.banner h1 {
+  margin-top: 80%;
+  margin-bottom: 10px;
+  font-size: 60px;
+}
+
+.banner h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.banner a .banner-btn {
+  text-transform: uppercase;
+  background: rgb(249, 2, 2);
+  padding: 15px 30px;
+  border-radius: 50px;
+}
+/*Dios zoro*/
+.dios-container {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.dios-titulo {
+  text-transform: uppercase;
+  font-size: 50px;
+  margin-bottom: 5%;
+}
+.dios-container li {
+  padding: 20px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+.dios-izquierda {
+  background-image: url("/Img/static-assets-upload2201115363502637532.webp");
+  flex-basis: 40%;
+}
+
+.dios-derecha {
+  flex-basis: 60%;
+}
+
+.dios-container p {
+  text-align: justify;
+  margin-bottom: 35px;
+  padding-left: 0;
+}
+.dios-container .dios-derecha h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.dios-container .dios-derecha .dios-btn {
+  text-transform: uppercase;
+  background: rgb(174, 174, 174);
+  padding: 15px 30px;
+  border-radius: 50px;
+}
+
+@media (max-width: 600px) {
+  .dios-izquierda,
+  .dios-derecha {
+    flex-basis: 100%;
+  }
+  .dios-container .dios-derecha {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+}
+
+/*Dios marina*/
+.marina-container {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.marina-titulo {
+  text-transform: uppercase;
+  font-size: 50px;
+  margin-bottom: 5%;
+}
+.marina-container li {
+  padding: 20px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+.marina-izquierda {
+  background-image: url("/Img/desktop-wallpaper-marine-one-piece-anime-board.jpg");
+  flex-basis: 40%;
+}
+
+.marina-derecha {
+  flex-basis: 60%;
+}
+
+.marina-container p {
+  text-align: justify;
+  margin-bottom: 35px;
+  padding-left: 0;
+}
+.marina-container .marina-derecha h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.marina-container .marina-derecha .marina-btn {
+  text-transform: uppercase;
+  background: rgb(174, 174, 174);
+  padding: 15px 30px;
+  border-radius: 50px;
+}
+
+@media (max-width: 600px) {
+  .marina-izquierda,
+  .marina-derecha {
+    flex-basis: 100%;
+  }
+  .marina-container .marina-derecha {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+}
+
+#mugiwaras {
+  background-color: rgb(0, 161, 225);
+}
+.mugiwaras-container {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.mugiwaras-container li {
+  flex-basis: 33%;
+  padding: 0 30px;
+  text-align: center;
+}
+.mugiwaras-container li h4 {
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.mugiwaras-titulo {
+  font-size: 50px;
+  margin-bottom: 5%;
+}
+@media (max-width: 600px) {
+  .mugiwaras-container li {
+    flex-basis: 100%;
+    margin-bottom: 60px;
+  }
+  .mugiwaras-container li p {
+    text-align: justify;
+  }
+}
+
+/* FOOTER */
+footer {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
 }
